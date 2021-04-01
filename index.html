@@ -110,7 +110,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#Index"
+            <a class="nav-link" href="#abc"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
@@ -146,8 +146,8 @@
         function ($routeProvider) {
           $routeProvider
             .when("/", {
-              templateUrl: "./pages/index.html",
-              controller: "IndexController",
+              templateUrl: "./pages/abc.html",
+              controller: "abcController",
             })
 
             .when("/about", {
@@ -169,8 +169,8 @@
         },
       ]);
 
-      app.controller("IndexController", function ($scope) {
-        $scope.message = "This is Index page";
+      app.controller("abcController", function ($scope) {
+        $scope.message = "This is abc page";
       });
 
       app.controller("AboutController", function ($scope) {
